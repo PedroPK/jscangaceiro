@@ -24,8 +24,6 @@ document.querySelector('.form').addEventListener(
                 tr.appendChild(td);
             }
         );
-        
-        //alert('Here 01!');
     }
 );
 
