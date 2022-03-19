@@ -9,7 +9,12 @@ var tbody = document.querySelector('table tbody');
 document.querySelector('.form').addEventListener(
     'submit', 
     function(event) {
-        // Canceling the Form Submission
+        /* 
+            Canceling the Form Submission. 
+
+            If this is not done, the Row is going to be added, 
+            but the form will be submited and the original page will be reloaded without the previously added row
+        */
         event.preventDefault();
 
         // Create a new Row (TR)
@@ -36,8 +41,17 @@ document.querySelector('.form').addEventListener(
 
         // Add the Volume TD into the TR
         tr.appendChild(tdVolume);
-
+        
+        // Add the TR in the TBody
         tbody.appendChild(tr);
+
+        // Clean the 3 Form Fields
+        campos[0].value = '';
+        campos[1].value = 1;
+        campos[2].value = 0;
+
+        // Put the focus back in the first Field from de Form
+        campos[0].focus();
     }
 );
 
