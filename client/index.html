@@ -59,7 +59,19 @@
             </tfoot>
         </table>
         
-        <script src="app/index.js"></script>
+        <!--
+            <script src="app/index.js"></script>
+        -->
         
+        <script src="app/domain/negociation/Negociation.js"></script>
+
+        <script>
+            var neg01       = new Negociation( new Date(), 5, 700);
+            var volume01    = neg01.calcVolume();
+            
+            console.log(neg01);
+            console.log(volume01);
+        </script>
+
     </body>
 </html>

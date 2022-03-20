@@ -1,11 +1,13 @@
 class Negociation {
 
-    constructor () {
-        this.date = new Date(); // Actual Date
-        this.quantity = 1;
-        this.value = 0.0;
+    constructor (pDate, pQuantity, pValue) {
+        this.date       = pDate;
+        this.quantity   = pQuantity;
+        this.value      = pValue;
     }
 
-    
+    calcVolume() {
+        return this.quantity * this.value;
+    }
 
 }
