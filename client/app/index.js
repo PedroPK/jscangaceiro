@@ -52,6 +52,9 @@ document.querySelector('.form').addEventListener(
 
         // Put the focus back in the first Field from de Form
         campos[0].focus();
+
+        // Baseline code could be found here
+        // https://github.com/flaviohenriquealmeida/cangaceiro-javascript/tree/master/01
     }
 );
 
